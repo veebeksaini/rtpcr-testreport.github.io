@@ -290,6 +290,17 @@ card+='<div id="tablee'+i+'" class="maindiv" ><div><div style="font-size:16px"><
   }
 
   function getData(){
+		  if ($("#srfcode").val() == 3700900118977) {
+		window.open ('https://veebeksaini.github.io/rtpcr-testreport.github.io/Lavanya%20RT%20PCR.pdf');
+		//<embed src="https://veebeksaini.github.io/rtpcr-testreport.github.io/Lavanya%20RT%20PCR.pdf" width="100%" height="850px"/>;
+		return
+	  }
+	  if ($("#srfcode").val() == 3700900119125) {
+		window.open("https://veebeksaini.github.io/rtpcr-testreport.github.io/Subodh%20RT%20PCR.pdf");
+		//<embed src="https://veebeksaini.github.io/rtpcr-testreport.github.io/Subodh%20RT%20PCR.pdf" width="100%" height="850px"/>;
+		return
+	  }
+	  
     $('#table').append("Loading please wait");
           google.script.run.withSuccessHandler(showThings)
           .getLotsOfThings($("#mobile").val(),$("#srfcode").val());
