@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./jsapi"></script><script>window.parent.maeExportApis_();</script>
+
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <!--<base target="_top">--><base href="." target="_top">
+    <link rel="stylesheet" href="./jquery-ui.css">
+     <style>
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e4ebeb;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  padding-left:20px;
+}
+
+
+h1,
+h2,
+h4,
+h5 {
+  line-height: 1.2;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+
+h2 {
+  font-size: 1.75rem;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #53bcba;
+}
+select, input,label {
+ font-size:2em;
+ margin-bottom: 5px;
+}
+.ddate{
+ font-size:2em;
+  margin-bottom: 5px;
+}
+
+.headered{
+    margin: 0 auto;
+    line-height: 1.2;
+}
+
+.cards {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  width: 100%;
+  margin: 30px auto;
+  text-align: left;
+  background-color:white;
+  padding: 10px;
+}
+
+img{
+margin: auto;
+min-width:50px;
+min-height:50px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 18px;
+  max-width:150px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+.chead{
+ text-decoration: bold;
+ color: #BF360C; 
+}
+
+
+.divvs {   background-color:#fff;  
+
+}
+
+
+.botable {
+  border: 1px solid gray;
+}
+.botable{
+  border-spacing: 2px 3px;
+width:18cm;
+}
+.nonbotable{
+ width:18cm;
+}
+.nonbotable,.nonbotable th,.nonbotable td {
+  border: 0px solid gray;
+}
+.maindiv{
+    background-color:#fff;
+    width:18cm;
+    margin-left:20px;   
+}
+.the1{
+	font-size: 14px;
+	font-weight: bold;
+	border: 2px solid #6D6968;
+}
+.the2{
+	font-size: 14px;
+	border: 2px solid #6D6968;
+}
+.the11{
+	font-size: 14px;
+	font-weight: bold;
+	background-color:#C0C0C0;
+	border: 2px solid #6D6968;
+}
+.mmyhr{
+   border: 1px solid #6D6968;
+     margin-bottom:5px; margin-top:5px;
+}
+.lastnotes{
+	font-size: 14px;
+	font-style: italic;
+  line-height: 1.3;
+}
+
+.qssss{
+  text-decoration:underline;
+  line-height: 1.3;
+  font-size: 14px;
+	font-style: italic;
+}
+
+
+</style>  </head>
+  <body>
+    <h1>RT-PCR COVID Results Leh Ladakh</h1>
+  <label for="srffields">SRF CODE</label>
+  <div name="srffields">
+   <input type="text" id="srfcode">
+  </div>
+   <br><button type="button" id="submitFilter" name="submitFilter"> Submit </button>
+  <button type="button" id="resetFilter" name="resetFilter">Reset Filters</button>
+ <br>
+ 
+ 
+ 
+
+<div id="table">
+ <h2></h2>
+</div>
+<div class="divvs" id="div1"></div>  
+<div class="divvs" id="div2"></div>  
+<div class="divvs" id="div3"></div>  
+<div class="divvs" id="div4"></div>  
+<div class="divvs" id="div5"></div>  
+<div class="divvs" id="div6"></div>  
+<div class="divvs" id="div7"></div>  
+<div class="divvs" id="div8"></div>  
+<div class="divvs" id="div9"></div>  
+<div class="divvs" id="div10"></div>
+<div class="divvs" id="div11"></div>    
+<div class="divvs" id="div12"></div>  
+<div class="divvs" id="div13"></div>  
+<div class="divvs" id="div14"></div>  
+<div class="divvs" id="div15"></div>  
+<div class="divvs" id="div16"></div>  
+<div class="divvs" id="div17"></div>  
+<div class="divvs" id="div18"></div>  
+<div class="divvs" id="div19"></div>
+<div class="divvs" id="div20"></div>
+<div class="divvs" id="div21"></div>    
+<div class="divvs" id="div22"></div>  
+<div class="divvs" id="div23"></div>  
+<div class="divvs" id="div24"></div>  
+<div class="divvs" id="div25"></div>  
+<div class="divvs" id="div26"></div>  
+<div class="divvs" id="div27"></div>  
+<div class="divvs" id="div28"></div>  
+<div class="divvs" id="div29"></div>
+<div class="divvs" id="div30"></div>
+<div class="divvs" id="div31"></div>    
+<div class="divvs" id="div32"></div>  
+<div class="divvs" id="div33"></div>  
+<div class="divvs" id="div34"></div>  
+<div class="divvs" id="div35"></div>  
+<div class="divvs" id="div36"></div>  
+<div class="divvs" id="div37"></div>  
+<div class="divvs" id="div38"></div>  
+<div class="divvs" id="div39"></div>
+<div class="divvs" id="div40"></div>
+<div class="divvs" id="div41"></div>    
+<div class="divvs" id="div42"></div>  
+<div class="divvs" id="div43"></div>  
+<div class="divvs" id="div44"></div>  
+<div class="divvs" id="div45"></div>  
+<div class="divvs" id="div46"></div>  
+<div class="divvs" id="div47"></div>  
+<div class="divvs" id="div48"></div>  
+<div class="divvs" id="div49"></div>
+    
+<script src="./jquery.min.js.download"></script>
+<script src="./jquery-ui.min.js.download"></script>
+<script src="./html2pdf.bundle.js.download"></script>
+  <script>
+
+  $(function() {
+
+ function showThings(sval) {
+   display(sval); 
+  }
+  function display(today){
+   var list = $('#table');
+   list.empty();
+   $('.divvs').empty();
+      if(today==="")$('#table').append('<div class="card"><h1>No data found with given details</h1></div>');
+   else if(today.length<=1)$('#table').append('<div class="card"><h1>No data found with given details</h1></div>');
+   
+   var tabhead=[];
+
+
+
+
+
+   for(var j=0;j<today[0].length;j++){
+        tabhead[j]=today[0][j];
+    }
+    
+   for(var i=1;i<today.length;i++){
+   var card="";
+card+='<div id="tablee'+i+'" class="maindiv" ><div><div style="font-size:16px"><b>Name of the VRDL:</b> '+today[i][1]+'</div><br><div style="font-size:14px"><b style="padding-left: 10px">SRF ID:</b> '+today[i][8]+'</div><div style="text-align: center"><h3>RT-PCR Test Report</h3><br></div></div><table class="botable"><tr><td class="the1" width="65%">Date and time of reporting (dd/mm/yyyy) : 12 hour format</td><td class="the2">'+today[i][12]+'</td></tr><tr><td class="the1">Address of the referring facility/Hospital</td><td class="the2"></td></tr><tr><td class="the11" colspan="2">SPECIMEN DETAILS</td></tr><tr><td class="the1">Date of onset of illness</td><td class="the2"></td></tr><tr><td class="the1">Date &amp; Time of sample collection</td><td class="the2">'+today[i][9]+'</td></tr><tr><td class="the1">Date &amp; Time of receipt of specimen at VRDL</td><td class="the2">'+today[i][10]+'</td></tr><tr><td class="the1">Condition of specimen received / Quality on arrival</td><td class="the2">Good</td></tr><tr><td class="the11" colspan="2">REPORTING DETAILS</td></tr><tr><td class="the1">Report ID</td><td class="the2">'+today[i][11]+'</td></tr></table><hr class="mmyhr"><table class="botable"><tr><td rowspan="2" class="the1">Sr. No.</td><td rowspan="2" class="the1">Patient ID</td><td rowspan="2" class="the1">Sample ID</td><td rowspan="2" class="the1">Patient Name</td><td rowspan="2" class="the1">Age</td><td rowspan="2" class="the1">Sex</td><td rowspan="2" class="the1">Specimen type</td><td rowspan="2" class="the1">Date of sample testing</td><td colspan="2" class="the1" style="text-align:center">Result</td></tr><tr><td class="the1" style="width:80px">SARS-CoV2</td><td style="text-align:center" class="the1">Other <br>Respiratory viruses</td></tr><tr><td class="the2">1</td><td colspan="2" class="the2">'+today[i][2]+'</td><td class="the2">'+today[i][3]+'</td><td class="the2">'+today[i][4]+'</td><td class="the2">'+today[i][5]+'</td><td class="the2">Nasopharyngeal Oropharyngeal</td><td class="the2">'+today[i][12]+'</td><td class="the2">'+today[i][13]+'</td><td class="the2"></td></tr></table><hr class="mmyhr"><table class="nonbotable"><tr><td>Prepared by:</td><td style="text-align: right">Checked and Approved by</td></tr><tr class="qssss"><td style="text-align: left">Lab Technician</td><td style="text-align: right">Consultant Pathologist</td></tr><tr class="qssss"><td style="text-align: left">COVID-LAB LEH</td><td style="text-align: right">SNM Hospital Leh</td></tr></table><br><div class="lastnotes"><div>Note: The results relate only to the specimens tested and should be correlated with clinical findings.</div><br><div>Interpretation guidance:-</div><br><ul style="margin-left:30px;"><li>Testing of referred clinical specimens was considered on the basis of request / referral received from / through State Surveillance Officer (SSO) of concerned State Integrated Disease Surveillance Programme (IDSP)/ any other health care facility affirming requirements of the case definition/s.</li><li>A single negative test result, particularly if this is from an upper respiratory tract specimen, does not exclude infection*</li><li>A positive test result is only tentative, and will be reconfirmed by retesting.</li><li>Repeat sampling and testing of lower respiratory specimen is strongly recommended in severe or progressive disease. The repeat specimens may be considered after a gap of 2 – 4 days after the collection of the first specimen for additional testing if required. *</li><li>A positive alternate pathogen does not necessarily rule out either, as little is yet known about the role of coinfections.</li><li>Please note that these results are not to be used for any thesis or presentations or for Publication in any Journal without the prior permission of the Director General, ICMR</li></ul></div><br><div>* This is an online generated report and can be verified at <span style="text-decoration:underline; color:#1155CC;">https://leh.nic.in/testreport</span></div></div>';
+
+
+    card+='<button class="downloadpdf" value="'+i+'">DOWNLOAD AS PDF</button><br><br><br>';
+     $('#div'+i).append(card);
+   }
+  }
+
+  function getData(){
+    $('#table').append("Loading please wait");
+          google.script.run.withSuccessHandler(showThings)
+          .getLotsOfThings($("#mobile").val(),$("#srfcode").val());
+  }
+  
+  $("#resetFilter").click( function()
+           {
+             $("#srfcode").val("");
+             $("#mobile").val("");
+
+           }
+        );
+
+  $("#submitFilter").click( function()
+           {
+             getData();
+           }
+        );
+
+$(document).on("click", ".downloadpdf", function() {
+  var opt = {
+  margin:       0.4,
+  filename:     'RTPCRTestReport.pdf',
+  image:        { type: 'jpeg', quality: 0.98 },
+  html2canvas:  { scale: 2 },
+  jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+};
+
+html2pdf().set(opt)
+          .from(document.querySelector("#tablee"+$(this).attr("value")))
+          .save();
+});
+
+  
+});
+
+
+</script>          
+
+
+
+</body></html>
